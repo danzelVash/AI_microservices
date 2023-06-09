@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="http://localhost:8080/css/home.css">
+    <link rel="icon" type="image/x-icon" href="http://localhost:8080/img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,350,400,500,700,800,900"
+          rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+<div id="container">
+    <div id="block1">
+        <img src="http://localhost:8080/img/image1.png" class="imageMain">
+        <div id="wrapper1">
+            <div id="home"><img onclick="openHeader()" class="homeIMG" src="http://localhost:8080/img/home.png"></div>
+            <div id="circle"><img onclick="openHeader()" id="close" src="http://localhost:8080/img/close.png"></div>
+            <div id="header">
+                <h1><img class="emblemH" src="http://localhost:8080/img/emblem.png"></h1>
+
+                <div id="title">DPM</div>
+                <div id=titles>
+                    <a class="ttt" href="#block2">ЗАГРУЗИТЕ ФОТОГРАФИИ</a>
+                    <img class="partition" src="http://localhost:8080/img/straight.png">
+                    <a class="ttt" href="#block4">ВАЖНЫЕ СОВЕТЫ</a>
+                    <img class="partition" src="http://localhost:8080/img/straight.png">
+                    <a class="ttt" href="#block5">КАК РАБОТАЕТ</a>
+                </div>
+
+            </div>
+            <div id="mainText">
+
+                <h1>Определите эмоциональное состояние людей на фото с помощью <font style="color: #00BFBF;">нейронной
+                    сети</font></h1>
+
+            </div>
+        </div>
+    </div>
+    <div id="block2">
+        <div class="wrapper2">
+
+            <div class=textPage2>
+                <img src="http://localhost:8080/img/plus.png" class="plus">
+                Хочешь узнать эмоциональное состояние человека по фото?</br>
+                Тогда смело загружай свои фотографии и получи ответ от самой настоящей нейронной сети!</br></br>
+                Нейросеть определит эмоцию человека на фотографии!</br></br>
+                Если она отрицательная - подскажет как лучше всего с ней справиться.</br>
+                Если положительная - даст советы по сохранению этого чувства.
+            </div>
+            <div class="textPage3">
+                <div class="title-U-P">
+                    Загрузите фотографии<br>
+                    <font class="comment">*от 1 до 10</font>
+                </div>
+                <img src="http://localhost:8080/img/arrow1.png" class="arrow1">
+                <img src="http://localhost:8080/img/arrow2.png" class="arrow2">
+                <img src="http://localhost:8080/img/arrow3.png" class="arrow3">
+            </div>
+            <div class="uploadingPhotos">
+
+                <label class="imageupLoadingPhotos">
+
+                    <input type="file" class="inputPhotos" multiple>
+                    <span><img src="http://localhost:8080/img/uploadingPhotos.png"></span>
+
+                </label>
+
+                <div class="clickOnMe">Нажми на меня</div>
+            </div>
+            <button class="buttonForPhotos open">Скорее загружай!</button>
+            <div class="hiddenButton">
+                <div class="Photos">
+                    <template id="tmpl">
+                        <div class="photo">
+                            <div class="smoke">
+                            </div>
+                            <img onclick="onclickDelete(this)" class="delete"
+                                 src="http://localhost:8080/img/delete.png">
+
+                        </div>
+                    </template>
+                </div>
+                <button onclick="sendPhotos()" class="sendPhotos">отправить</button>
+                <div class="expectation">
+                    Ожидание овета
+                    <template id="tmp4">
+                        <div class="point"></div>
+                    </template>
+                </div>
+
+            </div>
+
+
+            <div class="ImageGroup">
+                <img src="http://localhost:8080/img/2.1.png" class="image1">
+                <img src="http://localhost:8080/img/2.2.png" class="image2">
+                <img src="http://localhost:8080/img/2.3.png" class="image3">
+                <img src="http://localhost:8080/img/2.4.png" class="image4">
+            </div>
+        </div>
+
+        <div id="border" class="border"></div>
+    </div>
+    <div id="block3">
+        <template id="tmp2">
+            <div class="recommendations">
+                <div class="emotion">
+                    Я думаю на этом фото вы испытываете
+                </div>
+                <h1 style="font-size: 28px; font-weight: 600;">Советы</h1>
+
+            </div>
+        </template>
+        <template id="tmp3">
+            <div class="recommendations">
+                <div class="noemotion">
+                    К сожалению, я не увидел на этом фото человека, попробуйте еще раз
+                </div>
+            </div>
+        </template>
+    </div>
+
+    <div id="block4">
+        <div id=ImportantRecommendations>
+            Важные cоветы
+            <button onclick="wiewRecommendations()" class="viewAll">посмотреть все</button>
+        </div>
+        <div class=blockRecommendations>
+            <div class="wrapper2">
+                <img class="circle1" src="http://localhost:8080/img/circle1.png">
+                <img class="circle2" src="http://localhost:8080/img/circle2.png">
+
+                <div id="sadness">
+                    <div id="titleSadness" class="blockForRec">
+                        Грусть
+                        <img onclick="openTextSadness()" class="imgForRec"
+                             src="http://localhost:8080/img/arrow-blue.png">
+                    </div>
+                    <div id="textSadness"></div>
+                </div>
+
+                <div id="happiness">
+                    <div id="titleHappiness" class="blockForRec">
+                        Счастье
+                        <img onclick="openTextHappiness()" class="imgForRec"
+                             src="http://localhost:8080/img/arrow-green.png">
+                    </div>
+                    <div id="textHappiness"></div>
+                </div>
+
+                <div id="anger">
+                    <div id="titleAnger" class="blockForRec">
+                        Злость
+                        <img onclick="openTextAnger()" class="imgForRec" src="http://localhost:8080/img/arrow-red.png">
+                    </div>
+                    <div id="textAnger"></div>
+                </div>
+
+                <div id="disgust">
+                    <div id="titleDisgust" class="blockForRec">
+                        Отвращение
+                        <img onclick="openTextDisgust()" class="imgForRec"
+                             src="http://localhost:8080/img/arrow-orange.png">
+                    </div>
+                    <div id="textDisgust"></div>
+                </div>
+
+                <div id="fear">
+                    <div id="titleFear" class="blockForRec">
+                        Страх
+                        <img onclick="openTextFear()" class="imgForRec" src="http://localhost:8080/img/arrow-pink.png">
+                    </div>
+                    <div id="textFear"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="block5">
+        <div id="neuralNetwork">Как работает наша нейросеть</div>
+        <div id="wrapper3">
+            <div class="textNeuralNetwork">
+                <div class="stripe1"></div>
+                <h2>Снаружи</h2>
+                <p>Человек отправляет фотографию где должно быть одно лицо с ярко выраженной эмоцией на фронтенд.
+                    Фронтенд его принимает и отдает на Бэкенд сервер написанный на golang. 
+                    Дальше, благодаря микросервисной архитектуре нашего сайта, сервер на golang обращается к серверу,
+                    написанному на python Flask, который в свою очередь обращается к обученной модели машинного
+                    обучения. 
+                    Модель определяет эмоцию и отдает ее через python и golang серверы пользователю. </p>
+            </div>
+            <div class="textNeuralNetwork">
+                <div class="stripe1"></div>
+                <h2>Внутри</h2>
+                <p>Мы использовали библиотеку PyTorch, потому что эта библиотека активно развивается и имеет широкий
+                    функционал. 
+                    Модель обучена на датасете FER 2013.  FER2013 - датасет в открытом доступе, который содержит в себе
+                    7 базовых эмоций: Злость, Отвращение, Страх, Радость,  Грусть, Удивление, Нейтральное чувство. 
+                    Наша нейросеть - сверточная нейросеть. То есть она берет изображение, превращает его в свертки для
+                    лучшего распознавания эмоций и выдает более качественный ответ. 
+                    В качестве функции активации мы использовали ЛикиРелу. Если вкратце, то это модификация функции
+                    ReLU, которая добавляет небольшую отрицательную наклонную часть для отрицательных входных значений.
+                    Это позволяет избежать проблем с “мертвыми нейронами” и способствует более стабильному обучению.
+                    В качестве функции потерь использовали встроенную функцию “CrossEntropyLoss”.
+                    В качестве оптимайзера мы использовали встроенный оптимайзер “ADAM”. 
+                    Подробный код обучения и работы модели можно посмотреть на GITHUB.
+                    https://github.com/it-chep/microservice_mirea 
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="block6">
+        <div class="wrapper2">
+            <img class="emblem" src="http://localhost:8080/img/emblem.png">
+            <div id="Copyright">DPM © Copyright</div>
+            <div id="who">Проект сделан студентами РТУ МИРЭА:<br>
+                &#8226; Backend__ Даниил Узянов<br>
+                &#8226; Frontend__ Павел Калашников<br>
+                &#8226; Разработчик нейросети по распознаванию фото__ Максим Нечепорук
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+<script src="http://localhost:8080/js/index.js"></script>
+
+</body>
+</html>

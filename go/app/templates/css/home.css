@@ -1,0 +1,658 @@
+html {
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+h2{
+    font-size: 32px;
+}
+p{
+    font-size: 22px;
+}
+
+#container{
+    top:0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    font-family: 'Montserrat';
+    overflow: hidden;
+}
+#wrapper1{
+    width: 700px;
+    max-width: 95%;
+    margin: 0 auto;
+    position: relative;
+}
+#block1{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+#home{
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+#home.open{
+    display: none;
+}
+.homeIMG{
+    width: 36px;
+    margin-top: 8px;
+}
+
+#header{
+    width: 0px;
+    height: 55px;
+    margin: -20px auto 0 auto;
+    border-radius: 25px;
+    background-color: #000000;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    transition: width 2s;
+}
+#header.open{
+    width: 700px;
+    transition:  width 2s;
+}
+#circle{
+    position: relative;
+    background-color: black;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 8px auto 0 auto;
+    display: none;
+}
+#circle.open{
+    display: block;
+}
+#close{
+    margin-top: 8px;
+    position: relative;
+    z-index: 99;
+}
+
+.emblemH{
+    width: 32px;
+    float: left;
+    margin: -10px 0 0 26px;
+}
+#title{
+    position: absolute;
+    float: left;
+    color:white;
+    font-size: 22px;
+    font-weight: 500;
+    margin: -8px 30px 0 70px;
+ 
+}
+#titles{
+    height: 20px;
+    position: absolute;
+    margin: -4px 0 0 180px;
+    white-space: nowrap;
+}
+.ttt{
+    font-weight: 400;
+    position: relative;
+    font-size: 12px;
+    margin: 0 20px 0 20px;
+}
+.partition{
+    height: 18px;
+    position: absolute;
+}
+
+.imageMain{
+    object-fit: cover;
+    height: 100%;
+    width: 100%; 
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+}
+#mainText{
+    overflow: hidden;
+    color: white;
+    position: absolute;
+    font-weight:900;
+    font-size: 25px;
+    line-height: 58px;
+    z-index: 100;
+    margin-top: 22vh;
+    width:540px;
+    height: 400px;
+}
+
+
+#block2{
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+}
+.wrapper2{
+    margin: 0 auto;
+    width: 1200px;
+    max-width: 90%;
+}
+.plus{
+    margin-left: -44px;
+    margin-top: -41px;
+    position: absolute;
+}
+.textPage2{
+    color:white;
+    margin-top:200px;
+    font-size: 22px;
+    line-height: 28px;
+    width: 400px;
+    font-size: 22px;
+}
+.title-U-P{
+    color: white;
+    font-size: 26px;
+    margin-top: 60px;
+    margin-left: 12px;
+}
+.comment{
+    font-size: 12px;
+    position: relative;
+    top:-10px
+}
+
+
+
+.textPage3{
+    width: 400px;
+}
+.uploadingPhotos{
+    width: 150px;
+}
+.inputPhotos{
+    position: absolute;
+    z-index: -1;
+}
+.clickOnMe{
+    color: white;
+    text-align: center;
+    width: 70px;
+    margin: -10px auto 0 auto;
+}
+
+.buttonForPhotos.open{
+    background-color:#00E5E5;
+    position: relative;
+    top: -120px;
+    left: 170px;
+    width: 270px;
+    height: 66px;
+    border-radius: 40px;
+    outline: none;
+    border: 0;
+    font-size: 22px;
+    font-weight: 500;
+    display:block;
+}
+.buttonForPhotos{
+    display:none;
+}
+
+.hiddenButton{
+    width: 400px;
+    height: 196px;
+    margin-left: 170px;
+    margin-top: -130px;
+    display: none;
+
+}
+.hiddenButton.open{
+    display: block;
+}
+.Photos{
+    color:white;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    width: 280px;
+    height: 70px;
+    
+}
+
+.Photos::-webkit-scrollbar {
+	height: 5px;
+}
+.Photos::-webkit-scrollbar-track {	
+      background: #656565;
+      border-radius: 5px;
+      margin-left: 6px;
+      margin-right: 3px;
+}
+.Photos::-webkit-scrollbar-thumb {
+	  background-color :#BABABA;
+	  border-radius: 5px;
+}
+
+.sendPhotos{
+    background-color:#00E5E5;
+    position: relative;
+    width: 270px;
+    height: 66px;
+    margin-left: 90px;
+    margin-top: 16px;
+    border-radius: 40px;
+    outline: none;
+    border: 0;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+
+
+.expectation{
+    display: none;
+    color:white;
+    width: 100%;
+    text-align: center;
+    margin: 16px 0 0 70px;
+    font-weight:700;
+    width: 270px;
+}
+.point{
+    width: 3px;
+    height: 6px;
+    background-color: #00E5E5;
+    position: absolute;
+    border-radius: 40%;
+}
+
+
+
+.photo{
+    height: 60px;
+    width: 60px;
+    border-radius: 4px;
+    margin-left: 3px;
+    background-size: cover;
+    display:inline-block;
+}
+.smoke{
+    width: 14px;
+    height: 14px;
+    background-color: black;
+    opacity: 0.7;
+    border-radius: 0 0 0 5px ;
+    float: right;
+    position: relative;
+    z-index: 0;
+}
+.delete{
+    float: right;
+    position: relative;
+    width: 10px;
+    object-fit:cover;
+    opacity: 1;
+    margin: 1.5px -12.5px 0 0;
+    transition: all 0.5s ease-in-out;
+    z-index: 1;
+}
+
+.delete:hover{
+    width: 11px;
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+
+
+
+    .arrow1{
+        position: absolute;
+        margin-top:-145px;
+        margin-left: -90px;
+    }
+    .arrow2{
+        position: absolute;
+        margin-top:-10px;
+        margin-left: 160px;
+    }
+    .arrow3{
+        position: absolute;
+        margin-top:180px;
+        margin-left: 140px;
+    }
+
+
+.ImageGroup{
+    margin-left: 540px;
+    margin-top: -860px;
+    width: 800px;
+    position: relative;
+}
+    .image1 {
+        position: relative;
+        margin-left: 430px;
+        width: 200px;
+    
+    }.image2 {
+        position: relative;
+        top: -260px;
+        width: 230px;
+    
+    }.image3 {
+        position: relative;
+        width: 310px;
+        margin-top: 5px;
+        margin-left: 5px;
+    }.image4 {
+        position: relative;
+        margin-left: 565px;
+        width: 210px;
+        top: -340px;
+    }
+
+
+
+.border{
+    width:940px;
+    height: 1px;
+    margin: 50px auto 0 auto;
+    background-color: #00E5E5;
+}
+#block3{
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.emotion{
+    width: 600px;
+    overflow: hidden;
+    word-wrap:break-word;
+    font-size: 40px;
+    font-weight: 400;
+}
+.noemotion{
+    width: 700px;
+    float: left;
+    margin-top: 100px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+}
+.recommendations{
+    box-shadow: 4px 4px 25px 10px rgba(0, 0, 0, 0.25), -4px -4px 25px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 36px;
+    overflow: hidden;
+    width: 1000px;
+    margin: 100px auto 100px auto;
+    word-wrap:break-word;
+    padding: 44px;
+}
+
+
+#block4{
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+}
+#ImportantRecommendations{
+    color: white;
+    margin: 80px auto 0 auto;
+    width: 1080px;
+    height: 160px;
+    font-weight: 600;
+    font-size: 54px;
+    text-align: center;
+}
+.viewAll{
+    margin: 30px 0 0 160px;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    position: absolute;
+    background-color: black;
+    outline: none;
+    border: none;
+    transition: max-height 5s;
+}
+.blockRecommendations{
+    max-height: 0px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    color: white;
+}
+.blockRecommendations.open{
+    max-height: 9999px;
+    z-index: 111;
+    transition: max-height 5s;
+}
+.circle1{
+    margin: -10px 0 0 1175px;
+}
+.circle2{
+    margin: -200px 0 0 1275px;
+}
+
+.blockForRec{
+    width: 280px;
+    font-size: 28px;
+    padding: 20px;
+    background: #0B0B0B;
+    margin: 100px 0 10px 10px;
+}
+.imgForRec{
+    float: right;
+    width: 42px;
+}
+.pRec{
+    font-size: 30px;
+}
+
+    #sadness{
+        width: 420px;
+        position: relative;
+        margin: -900px 0 0 700px;
+        word-wrap:break-word;
+    }
+    #titleSadness{
+        box-shadow: 0px 0px 10px 6px rgba(36, 0, 255, 0.2);
+        transition: box-shadow 1s;
+    }
+    #titleSadness:hover{
+        box-shadow: 0px 0px 10px 6px rgba(36, 0, 255, 0.3);
+        transition: box-shadow 1s;
+    }
+    #textSadness{
+        display: none;
+        margin: 20px 0 0 10px;
+        width: 100%;
+        word-wrap:break-word;
+        height: 100%;
+    }
+    #textSadness.open{
+        display: block;
+    }
+
+
+
+    #happiness{
+        width: 600px;
+        margin-top: -60px;
+        position: relative;
+        word-wrap:break-word;
+    }
+    #titleHappiness{
+        box-shadow: 0px 0px 10px 6px rgba(82, 255, 0, 0.2);
+        transition: box-shadow 1s;
+    }
+    #titleHappiness:hover{
+        box-shadow: 0px 0px 10px 6px rgba(81, 255, 0, 0.3);
+        transition: box-shadow 1s;
+    }
+    #textHappiness{
+        display: none;
+        margin: 20px 0 0 10px;
+        width: 100%;
+        word-wrap:break-word;
+        height: 100%;
+    }
+    #textHappiness.open{
+        display: block;
+    }
+
+
+    
+    #anger{
+        width: 680px;
+        margin: 140px 0 0 500px;
+        position: relative;
+        word-wrap:break-word;
+    }
+    #titleAnger{
+        box-shadow: 0px 0px 10px 6px rgba(255, 0, 0, 0.2);
+        transition: box-shadow 1s;
+    }
+    #titleAnger:hover{
+        box-shadow: 0px 0px 10px 6px rgba(255, 0, 0, 0.3);
+        transition: box-shadow 1s;
+    }
+    #textAnger{
+        display: none;
+        margin: 20px 0 0 10px;
+        width: 100%;
+        word-wrap:break-word;
+        height: 100%;
+    }
+    #textAnger.open{
+        display: block;
+    }
+
+    #disgust{
+        width: 500px;
+        margin: 200px 0 0 100px;
+        position: relative;
+        word-wrap:break-word;
+    }
+    #titleDisgust{
+        box-shadow: 0px 0px 10px 6px rgba(255, 184, 0, 0.2);
+        transition: box-shadow 1s;
+    }
+    #titleDisgust:hover{
+        box-shadow: 0px 0px 10px 6px rgba(255, 184, 0, 0.3);
+        transition: box-shadow 1s;
+    }
+    #textDisgust{
+        display: none;
+        margin: 20px 0 0 10px;
+        width: 100%;
+        word-wrap:break-word;
+        height: 100%;
+    }
+    #textDisgust.open{
+        display: block;
+    }
+
+    #fear{
+        width: 440px;
+        margin: -60px 0 0 740px;
+        margin-bottom: 200px;
+        position: relative;
+        word-wrap:break-word;
+    }
+    #titleFear{
+        box-shadow: 0px 0px 10px 6px rgba(255, 0, 245, 0.2);
+        transition: box-shadow 1s;
+    }
+    #titleFear:hover{
+        box-shadow: 0px 0px 10px 6px rgba(255, 0, 245, 0.3);
+        transition: box-shadow 1s;
+    }
+    #textFear{
+        display: none;
+        margin: 20px 0 0 10px;
+        width: 100%;
+        word-wrap:break-word;
+        height: 100%;
+    }
+    #textFear.open{
+        display: block;
+    }
+
+
+#block5{
+    overflow: hidden;
+    width: 100%;
+}
+#wrapper3{
+    margin: 0 auto;
+    width: 1100px;
+    max-width: 90%;
+}
+#neuralNetwork{
+    color: #00BFBF;
+    margin-top: 80px;
+    font-weight: 600;
+    font-size: 54px;
+    text-align: center;
+    width: 100%;
+}
+.textNeuralNetwork{
+    margin: 50px 0 0 -80px;
+    opacity: 0;
+    position: relative;
+    width: 100%;
+}
+.textNeuralNetwork.open{
+    opacity: 1;
+    margin-left:0px;
+    transition: all 1s;
+}
+.stripe1{
+    background-color: #00BFBF;
+    width: 20px;
+    height: 4px;
+    position: absolute;
+    margin: 18px 0 0 -30px;
+}
+
+
+
+
+
+
+
+#block6{
+    background-color: #1E1E1E;
+    height: 300px;
+    width: 100%;
+    margin-top: 140px;
+}
+.emblem{
+    margin-top: 110px;
+    float: left;
+}
+#Copyright{
+    color: white;
+    float: left;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 120px 0 0 15px;
+}
+#who{
+    float: right;
+    margin-top: 120px;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+
+}

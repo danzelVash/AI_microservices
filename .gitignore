@@ -1,0 +1,6 @@
+python/define_emotion/saved_epochs/emoji_last1_model_epoch_50.pth
+python/define_emotion/model_train.py
+python/define_emotion/ai_models.py
+.idea
+go/.env
+go/.idea

@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package proto;
+
+option go_package = "app2/proto2";
+
+service TellAboutPhoto {
+  rpc GetInfo(TellRequest) returns (TellResponse) {}
+}
+
+message MediaRequest {
+  bytes data = 1;
+  string contentType = 2;
+}
+
+message TellRequest {
+  repeated MediaRequest mediaTellReqArr = 1;
+}
+
+message MediaResponse {
+  bytes data = 1;
+  string contentType = 2;
+  string description = 3;
+}
+
+message TellResponse {
+  repeated MediaResponse mediaTellRespArr = 1;
+  string descriptionAll = 2;
+}
